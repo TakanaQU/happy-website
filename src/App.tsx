@@ -9,7 +9,7 @@ function App() {
         
           
           <header className="App-header">       
-            <div style={{ backgroundImage: "url(/vortex.png"}}>
+            <div style={{ backgroundImage: "url(/vortex.png)"}}>
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" />
             <img src={'/laying.svg'} className="SmilingImage" alt="smiling" />
             <p>
