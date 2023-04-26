@@ -8,7 +8,9 @@ function App() {
       <div className="App">
         
           
-          <header className="App-header">       
+          <header className="App-header">    
+          言いたいことも言えないこんな世の中<br />
+          言いたいことを言いたいと思いませんか？   
             <div style={{ backgroundImage: "url(/vortex.png)"}}>
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" />
             <img src={'/laying.svg'} className="SmilingImage" alt="smiling" />
