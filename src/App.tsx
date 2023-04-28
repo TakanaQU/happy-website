@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import clsx from 'clsx';
 
 function App() {
   return (
@@ -36,10 +35,12 @@ function App() {
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             物足りない愛情
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
-
+            生! 生! 傷つくことなく手軽に生を感じたい
+            <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             裏
             反転ボタン
             全部全部全部壊したい
+            ラズパイサーバーにして立てる
 
           </div>
         </header>
