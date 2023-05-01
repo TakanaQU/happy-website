@@ -4,7 +4,6 @@ const backgroundStyle = {
     backgroundSize: 'cover',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
     backgroundImage: 'url(/vortex.png)',
 }
 
