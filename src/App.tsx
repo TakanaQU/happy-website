@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import backgroundStyle from './backgroundStyle';
 
 function App() {
   return (
@@ -8,10 +7,10 @@ function App() {
       <div className="App">
         
           
-          <header>    
+          <header className="App-header">    
           言いたいことも言えないこんな世の中<br />
           うんざりしていませんか？
-            <div style={{ backgroundImage: "url(/vortex.png)"}}>
+            <div style={backgroundStyle}>
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
             <p>
