@@ -1,5 +1,6 @@
 import React from 'react';
 import backgroundStyle from './backgroundStyle';
+import Header from './Header';
 
 function App() {
   return (
@@ -7,9 +8,7 @@ function App() {
       <div className="App">
         
           
-          <header className="App-header">    
-          言いたいことも言えないこんな世の中<br />
-          うんざりしていませんか？
+          <Header />
             <div style={backgroundStyle}>
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
@@ -45,7 +44,6 @@ function App() {
             ラズパイサーバーにして立てる
 
           </div>
-        </header>
     </div>
   );
 }
