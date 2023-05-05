@@ -14,6 +14,7 @@ function App() {
             <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
             <p>
               あ〜5000兆円欲しい!!!
+              石油掘りたい
             </p>
             <p>
               確かめるにはこちら↓
