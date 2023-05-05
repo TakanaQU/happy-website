@@ -13,7 +13,7 @@ function App() {
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
             <p>
-              死は救済なのか？ 自分で確かめるしかないのか？
+              あ〜5000兆円欲しい!!!
             </p>
             <p>
               確かめるにはこちら↓
@@ -26,7 +26,7 @@ function App() {
             >
               学校では教えてくれない世界の真理（ひ♡み♡つ）
             </a>
-            <br />あ〜5000兆円欲しい<br />
+            <br />死は救済なのか？ 自分で確かめるしかないのか？<br />
             <div className="App-logo-spin"> 
             <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
             </div>
