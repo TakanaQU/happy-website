@@ -1,6 +1,7 @@
 import React from 'react';
 import backgroundStyle from './backgroundStyle';
 import Header from './Header';
+import 'destyle.css';
 
 function App() {
   return (
