@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css';
 
 
 function Header() {
@@ -23,10 +24,10 @@ function Header() {
     }
     
 
-    const [isRotated, setIsRotated] = useState(false);
+    const [isRotating, setIsRotating] = useState(false);
 
-    const rotationButtonClick = () => {
-        setIsRotated(!isRotated);
+    const rotationButton = () => {
+        setIsRotating(!isRotating);
     };
     
 
@@ -34,8 +35,8 @@ function Header() {
         <header style={headerStyle}>
             <h1 style={{fontSize: '50px', lineHeight: '1'}}>言いたいことも言えないこんな世の中
             うんざりしていませんか？</h1>
-            <button style={buttonStyle} className={isRotated ? 'rotated': ''} onClick={rotationButtonClick}>
-                大回転
+            <button style={buttonStyle} className={isRotating ? 'rotate': ''} onClick={rotationButton}>
+                {isRotating ? '停止': '回転'}
             </button>
         </header>
     )
