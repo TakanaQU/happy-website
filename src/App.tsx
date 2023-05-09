@@ -1,9 +1,19 @@
 import React from 'react';
 import backgroundStyle from './backgroundStyle';
-import Header from './Header';
-import 'destyle.css';
+import { Header, RotateButton } from './Header';
+import { useState } from 'react';
+import './Rotation.css';
+
+
+
 
 function App() {
+  const [isRotating, setIsRotating] = useState(false);
+
+  const handleClick = () => {
+    setIsRotating(prevState => !prevState);
+  };
+
   return (
     
       <div className="App">
@@ -11,7 +21,7 @@ function App() {
           
           <Header />
             <div style={backgroundStyle}>
-            <img src={'/smile.svg'} className="SmilingImage" alt="smiling" /><br />
+            <img src={'/smile.svg'} className={isRotating ? 'rotate': ''} alt="smiling" onClick={handleClick} /><br />
             <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
             <p>
               あ〜5000兆円欲しい!!!
