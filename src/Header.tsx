@@ -1,16 +1,41 @@
 import { useState } from "react";
-import './App.css';
+import './Rotation.css';
 
 
-function Header() {
+interface RotateButtonProps {
+    isRotating: boolean;
+    onRotationButtonClick: () => void;
+}
+
+const Header = () => {
     const headerStyle = {
         backgroundColor: 'black',
         color: 'white',
         margin: 0,
         height: '100px',
         top: 0,
-    }
+    };
 
+    
+    const [isRotating, setIsRotating] = useState(false);
+
+    const handleRotationButtonClick = () => {
+        setIsRotating((prevIsRotating) => !prevIsRotating);
+    };
+    
+    return (
+        <header style={headerStyle}>
+            <h1 style={{fontSize: '50px', lineHeight: '1'}}>言いたいことも言えないこんな世の中
+            うんざりしていませんか？</h1>
+            <RotateButton 
+            isRotating={isRotating}
+            onRotationButtonClick={handleRotationButtonClick}
+            />
+        </header>
+    );
+};
+
+const RotateButton = ({ isRotating, onRotationButtonClick }: RotateButtonProps) => {
     const buttonStyle = {
         backgroundColor: 'white',
         color: 'black',
@@ -21,27 +46,12 @@ function Header() {
         borderRadius: '20px',
         cursor: 'pointer',
         transition: 'all 0.2s ease-in-out',
-    }
-    
-
-    const [isRotating, setIsRotating] = useState(false);
-
-    const rotationButton = () => {
-        setIsRotating(!isRotating);
     };
-    
-
     return (
-        <header style={headerStyle}>
-            <h1 style={{fontSize: '50px', lineHeight: '1'}}>言いたいことも言えないこんな世の中
-            うんざりしていませんか？</h1>
-            <button style={buttonStyle} className={isRotating ? 'rotate': ''} onClick={rotationButton}>
-                {isRotating ? '停止': '回転'}
-            </button>
-        </header>
-    )
-}
+        <button style={buttonStyle} className={isRotating ? 'rotate': ''} onClick={onRotationButtonClick}>
+            {isRotating ? '停止': '回転'}
+        </button>
+    );
+};
 
-
-
-export default Header;
+export { Header, RotateButton };
