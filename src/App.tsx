@@ -17,7 +17,7 @@ function App() {
   return (
     
       <div className="App">
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
           
           <Header />
             <div style={backgroundStyle}>
