@@ -12,7 +12,7 @@ const Header = () => {
         backgroundColor: 'black',
         color: 'white',
         margin: 0,
-        height: '100px',
+        height: 'auto',
         top: 0,
     };
 
