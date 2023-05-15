@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header style={headerStyle}>
             <h1 style={{fontSize: '50px', lineHeight: '1'}}>言いたいことも言えないこんな世の中
-            うんざりしていませんか？</h1>
+            うんざりしていませんか?</h1>
             <RotateButton 
             isRotating={isRotating}
             onRotationButtonClick={handleRotationButtonClick}

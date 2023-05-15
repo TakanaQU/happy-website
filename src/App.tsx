@@ -18,6 +18,7 @@ function App() {
     color: 'black',
     margin: 0,
     top: 0,
+    fontSize: '5em',
 };
 
   return (
