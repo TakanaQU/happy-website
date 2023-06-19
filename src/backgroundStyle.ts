@@ -5,6 +5,7 @@ const backgroundStyle = {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundImage: 'url(/vortex.png)',
+    
 }
 
 export default backgroundStyle;
