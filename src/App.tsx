@@ -3,6 +3,7 @@ import backgroundStyle from './backgroundStyle';
 import { Header } from './Header';
 import { useState } from 'react';
 import './Rotation.css';
+import './App.css';
 
 
 
@@ -31,9 +32,11 @@ function App() {
             <p>
               笑顔を回して笑顔の輪をつくろう
             </p>
-            <img src={'/smile.svg'} className={isRotating ? 'rotate': ''} alt="smiling" onClick={handleClick} /><br />
-            <img src={'/laying.svg'} className="SmilingImage" alt="laying" />
-
+            <div className="container">
+              <img src={'/animal_smile_inu.png'} className={isRotating ? 'rotate': ''} alt="smiling" onClick={handleClick} /><br />
+              <img src={'/body_kanzou_good.png'} className="SmilingImage" alt="laying" />
+              <img src={'/animal_smile_kuma.png'} className="Smiles" alt="kuma" />
+            </div>
             
             
             
