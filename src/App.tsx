@@ -33,9 +33,10 @@ function App() {
               笑顔を回して笑顔の輪をつくろう
             </p>
             <div className="container">
-              <img src={'/animal_smile_inu.png'} className={isRotating ? 'rotate': ''} alt="smiling" onClick={handleClick} /><br />
-              <img src={'/body_kanzou_good.png'} className="SmilingImage" alt="laying" />
-              <img src={'/animal_smile_kuma.png'} className="Smiles" alt="kuma" />
+              <img src={'/animal_smile_inu.png'} className={isRotating ? 'rotate': ''} alt="dog" onClick={handleClick} />
+              <img src={'/body_kanzou_good.png'} className={isRotating ? 'rotate': ''} alt="kanzou" onClick={handleClick} />
+              <img src={'/animal_smile_kuma.png'} className={isRotating ? 'rotate': ''} alt="bear" onClick={handleClick} />
+              
             </div>
             
             
