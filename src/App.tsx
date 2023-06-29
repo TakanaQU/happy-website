@@ -36,7 +36,7 @@ function App() {
               <img src={'/animal_smile_inu.png'} className={isRotating ? 'rotate': ''} alt="dog" onClick={handleClick} />
               <img src={'/body_kanzou_good.png'} className={isRotating ? 'rotate': ''} alt="kanzou" onClick={handleClick} />
               <img src={'/animal_smile_kuma.png'} className={isRotating ? 'rotate': ''} alt="bear" onClick={handleClick} />
-              
+              <img src={'/book_character_smile.png'} className={isRotating ? 'rotate': ''} alt="bear" onClick={handleClick} />
             </div>
             
             
